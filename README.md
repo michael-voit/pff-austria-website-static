@@ -12,4 +12,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Acknowledgments
 
-* Wir haben als Grundlage die [repository der Fridays For Future München Website](https://github.com/fridays-for-future/fridays-for-future.github.io) verwendet und danken sehr dafür!
+* Wir haben als Grundlage die [repository der Parents For Future Österreich Website](https://github.com/fridays-for-future/fridays-for-future.github.io) verwendet und danken sehr dafür!
