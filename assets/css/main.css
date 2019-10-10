@@ -227,7 +227,7 @@ th {
     font-family: "fff-header";
 }
 
-.next-strike {
+.next-event {
     font-size:16pt;
     display:block;
     line-height:1;
@@ -235,7 +235,7 @@ th {
     font-family: fff-header;
 }
 @media only screen and (min-width:550px) {
-    .next-strike {
+    .next-event {
         margin:0;
         font-size:30pt;
     }
