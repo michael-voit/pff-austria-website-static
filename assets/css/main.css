@@ -241,19 +241,6 @@ th {
     }
 }
 
-@media only screen and (min-width:550px) {
-    .box-left{
-
-        width:48%
-    }
-    .box-right {
-        position:absolute;
-        right:0;
-        top: -1.6em;
-        width:48%
-    }
-}
-
 .subgroup{
     float: left;
     width:33%;
@@ -265,14 +252,28 @@ th {
     padding-right: 10vw;
 }
 
-.demads-box {
+.boxes-two {
     position:relative;
     margin-bottom: 0em;
 }
-@media only screen and (min-width:550px) {
+.boxes-two h2 {
+    margin: 2em 0 0.25em;
+}
+
+@media only screen and (min-width:890px) {
     .boxes-two {
         position:relative;
         margin-bottom: 3.5em;
+    }
+    .box-left{
+
+        width:48%
+    }
+    .box-right {
+        position:absolute;
+        right:0;
+        top: -4.1em;
+        width:48%
     }
 }
 
