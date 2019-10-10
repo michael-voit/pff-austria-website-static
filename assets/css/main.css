@@ -242,11 +242,11 @@ th {
 }
 
 @media only screen and (min-width:550px) {
-    .demands{
+    .box-left{
 
         width:48%
     }
-    .demands-right {
+    .box-right {
         position:absolute;
         right:0;
         top: -1.6em;
@@ -270,7 +270,7 @@ th {
     margin-bottom: 0em;
 }
 @media only screen and (min-width:550px) {
-    .demands-box {
+    .boxes-two {
         position:relative;
         margin-bottom: 3.5em;
     }
