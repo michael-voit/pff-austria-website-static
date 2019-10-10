@@ -1449,13 +1449,19 @@ html
 {font-size:20pt;display:none;line-height:1;color:#fff;}
 @media only screen and (min-width:890px)
 {.header .site-title
-{margin:0;font-size:27pt;display:block}}
+{margin:0;font-size:27pt;display:block}
+.header .site-title.sbgld
+{margin: 0px 0 0 65px;font-size: 24pt;}}
 @media only screen and (min-width:1000px)
 {.header .site-title
-{margin:0;font-size:35pt;}}
+{margin:0;font-size:35pt;}
+.header .site-title.sbgld
+{margin:0;font-size:29pt;}}
 @media only screen and (min-width:1300px)
 {.header .site-title
-{margin:0;font-size:46pt;}}.header .site-description
+{margin:0;font-size:46pt;}
+.header .site-title.sbgld
+{font-size:39pt;}}.header .site-description
 {font-size:30pt;display:block;line-height:1;color:#fff;margin-top:10px}
 @media only screen and (min-width:550px)
 {.header .site-description
