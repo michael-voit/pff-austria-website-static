@@ -253,6 +253,10 @@ th {
     }
 }
 
+.osm-map {
+    margin-top: 20px;
+}
+
 .subgroup{
     float: left;
     width:33%;
