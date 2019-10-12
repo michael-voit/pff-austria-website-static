@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Parents for Future Österreich</title>
+    <meta name="description" content="Parents For Future Österreich">
+
+    <link rel="icon" href="./assets/img/fff_icon.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Leaflet for OSM -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script> -->
+  </head>
+
+  <body>
+    <section id="header">
+
+      <div class="dropdown">
+        <button  type="button" class="dropbtn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="dropdown-content">
+          <span style="white-space:nowrap"><a class="link" href="#about" data-scroll>Wer sind wir?</a></span>
+          <span style="white-space:nowrap"><a class="link" href="#whatyoucando" data-scroll>Was kannst Du tun?</a></span>
+          <a class="link" href="#streikfonds" data-scroll>Streikfonds</a>
+          <span style="white-space:nowrap"><a class="link" href="#region" data-scroll>Mach mit!</a></span>
+        </div>
+      </div>
+
+      <div class="background">
+        <img src="./assets/img/PFF-Oesterreich.png" class="header-logo" alt="Logo der Parents For Future Austria">
+        <div class="header">
+          <span class="site-title">Parents for Future Österreich</span>
+          <div class="header-links">
+            <span style="white-space:nowrap"><a class="link" href="#about" data-scroll>Wer sind wir?</a></span>
+            <span style="white-space:nowrap"><a class="link" href="#whatyoucando" data-scroll>Was kannst Du tun?</a></span>
+            <a class="link" href="#streikfonds" data-scroll>Streikfonds</a>
+            <span style="white-space:nowrap"><a class="link" href="#region" data-scroll>Mach mit!</a></span>
+          </div>
+          <!--<a class="language" href="" data-scroll>English</a>-->
+        </div>
+      </div>
+
+      <div class="border-top">
+        <div class="next-event">
+          Nächster Klimastreik: 11.&nbsp;Oktober, 11:55&nbsp;Uhr, Ballhausplatz, Wien
+        </div>
+        <a class="down" aria-label="Springe direkt zur Veranstaltung" href="#participate" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i></a>
+        <div class="header-icons" style="margin-top:3em">
+          <a aria-label="Facebook" target="_blank" href="https://www.facebook.com/Parents-for-future-Austria-320545775266918/"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a aria-label="Twitter" target="_blank" href="https://twitter.com/PFF_Wien"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+          <a aria-label="WhatsApp" target="_blank" href="mailto:parents@fridaysforfuture.at?subject=WhatsApp-Gruppe Parents For Future Österreich&body=Hallo,
+
+          ich würde mich gerne mit Euch über die WhatsApp-Gruppe austauschen und freue mich über Eure Antwort."><i class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+<!--     <a name="participate"></a>
+    <section id="projects">
+      <div class="user-details">
+        <h1> Mach mit! </h1>
+      </div>
+      <p>Als globale Bewegung streiken wir seit mehreren Monaten wöchentlich für Veränderungen in der Politik, die nötig sind, um das Pariser Klimaabkommen einzuhalten und die Erderwärmung auf 1,5 °C zu beschränken.
+      In München findet der nächste Streik findet am <b>Freitag, dem 4. Oktober</b> statt. Wir treffen uns <b>um 11 Uhr am Wittelsbacherplatz</b>.</p>
+
+      <div align="justify">
+        <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+      </div>
+      <script>
+        var mymap = L.map('MapID').setView([48.1436, 11.5761], 14);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'your.mapbox.access.token'
+      }).addTo(mymap);
+        mymap.scrollWheelZoom.disable();
+        var marker = L.marker([48.1436, 11.5761]).addTo(mymap);
+        marker.bindPopup("<b>Wittelsbacherplatz</b><br>Freitag, 4. Oktober, 11 Uhr");
+      </script>
+
+      <h2 style="text-align: center">Gerade nicht in München?</h2>
+      <p>
+      Kein Problem! Wir sind eine globale Bewegung, und in vielen anderen Städten in Deutschland und weltweit gibt es ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht daheim bist, schau einfach hier nach wo überall auch gestreikt wird:
+      </p>
+
+      <div style="text-align:center">
+        <a class="project-link" href="https://www.fridaysforfuture.de" style="margin-right:1em">In Deutschland</a>
+        <a class="project-link" href="https://www.fridaysforfuture.org">Weltweite Karte</a>
+      </div>
+    </section>
+    <div class="border">
+      <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+    </div> -->
+
+    <a name="about"></a>
+    <section id="about" class="block">
+      <h1 style="text-align: center">Parents For Future - Wer sind wir?</h1>
+      <p>Wir sind ein freier Zusammenschluss von erwachsenen Menschen und stehen als #ParentsForFuture in Solidarität zur #FridaysForFuture Bewegung. Wir unterstützen die jungen Menschen in Ihrem Kampf für einen ambitionierten Klimaschutz in Österreich und globale Klimagerechtigkeit.</p>
+      <p>Dazu gehört für uns auch explizit das Mittel des Schulstreiks.</p>
+      <h2 style="text-align: center">Wozu sind wir da?</h2>
+      <p>--- <em>wenn Du lieber hörst als liest, dann hör Dir doch die ersten <strong>19 Minuten der Aufzeichnung <a href="https://cba.fro.at/399275">dieser Radiosendung</a></strong> an. Du erfährst darin etwas über die Dringlichkeit des Streikerfolges und über die Anfänge von #ParentsForFuture ---</em></p>
+      <p>Unsere Kinder streiken, weil es um ihre Zukunft geht. Wir unterstützen sie dabei, wollen ihre Stimmen verstärken und werden ihnen den Rücken freihalten, solange die Streiks notwendig sind.</p>
+      <p>Wir wollen, dass es für unsere Kinder nicht mehr notwendig ist zu streiken und dass sie am Freitag wieder in der Schule sind. Das wird aber erst geschehen, wenn die Regierungen durch Taten vermitteln können,
+      dass die notwendigen Maßnahmen gesetzt werden, um die Pariser Klimaziele zu erreichen.</p>
+      <p>Wir gehen Hand in Hand mit unseren Kindern und kämpfen für Klimagerechtigkeit! Jetzt und solange es notwendig ist!</p>
+      <p>Unser Engagement umfasst die Arbeit an Schulen und in der lokalen Öffentlichkeit ebenso wie die Durchführung eigener Aktionen zum Thema Klima- und Umweltschutz.</p>
+      <p>Wir sind unabhängig von politischen Parteien und Organisationen und weder Unternehmen noch institutionellen Interessengruppen verpflichtet.</p>
+      <p>Alle, die sich mit unserer Arbeit sowie unserem Leitbild identifizieren, sind eingeladen, sich einzubringen und mitzuhelfen. Das Engagement in unserer Gruppe ist unabhängig davon, ob jemand selbst Kinder hat oder nicht.</p>
+      <p><br /><b>Hast du Fragen zu #ParentsForFuture Gruppen in ganz Österreich, schick uns eine Email an <a href="mailto:parents@fridaysforfuture.at">parents@fridaysforfuture.at</a> und wir versuchen dir weiterzuhelfen und Kontakt herzustellen.</b></p>
+    </section>
+    <div class="border">
+      <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg </div>
+    </div>
+
+    <a name="whatyoucando"></a>
+    <section id="whatyoucando" class="block">
+      <h1 style="text-align: center">Was kannst Du tun?</h1>
+      <p>Der beste Zeitpunkt, für Klimagerechtigkeit zu kämpfen, war vor 30 Jahren. Der letzte mögliche Zeitpunkt, einen gefährlichen Klimakollaps abzuwenden, ist <strong>jetzt!</strong></p>
+      <p>Unterstütze dein Kind beim Streik. Kämpfe für das Recht deines und aller anderen Kinder zu streiken. Sprich mit Abgeordneten, ruf Sie an, schreib ihnen eine Email. Mach ihnen Druck!</p>
+      <p>Schließ dich uns an und gib nicht auf bis wir es geschafft haben! Wir
+      wollen nichts Unmögliches. Wir wollen nur, dass die Regierung ihre Zusagen in Bezug auf die Pariser Klimaziele sicherstellt!</p>
+      <p>Wenn möglich, komm in die WhatsApp Gruppe und übernimm verschiedenste
+      Tätigkeiten. Wir suchen Menschen mit Engagement und Skills.</p>
+      <p>Zugegebenermaßen können wir auch finanzielle Unterstützung für die Streikorganisation gut brauchen! Wenn du uns da unterstützen willst, schreib uns bitte unter <a href="mailto:parents@fridaysforfuture.at">parents@fridaysforfuture.at</a></p>
+      <p>Wir brauchen aber nicht nur dich, sondern auch deine(n) PartnerIn, deine Schwester, deinen Bruder, deinen Schwager, deine Schwägerin, Onkel, Tanten, Freundinnen und Freunde, die Lehrpersonen deiner Kinder –
+      einfach alle Erwachsenen als eine starke Stimme hier am Heldenplatz, jeden Freitag, <strong>besonders bei den großen weltweiten Streiks </strong>und andauernd in den Sozialen Medien. <strong>Bis wir es geschafft haben!</strong></p>
+    </section>
+    <div class="border">
+      <div class="quotation"> „Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br> — Prof. Dr. Hans Joachim Schellnhuber, Klimaforscher</div>
+    </div>
+
+    <a name="streikfonds"></a>
+    <section id="streikfonds" class="block">
+      <div class="user-details">
+        <h1>Parents richten Streikfonds ein!</h1>
+      </div>
+      <p>Wir brauchen Kinder und Jugendliche, die mutig und reflektiert für ihre Gesinnung einstehen und ihre Zukunft selbst in die Hand nehmen. Dabei wollen wir unsere Kinder als Eltern begleiten und unterstützen.
+      </p><p>
+      Wir sind stolz, dass unsere Jugend seit Dezember 2018 jeden Freitag genau dies tut. Statt sie deswegen zu bestrafen, sollten wir uns ihren Mut und Ausdauer als Vorbild nehmen!
+      </p><p>
+      Wir fordern die Politiker*Innen auf, endlich die dringend notwendigen Maßnahmen zur Bewältigung der Klimakrise zu ergreifen, damit die Jugend nicht mehr auf die Straße gehen muss!
+      </p><p>
+      Bis dahin sehen wir uns gezwungen, unsere Kinder zu schützen und sie beim Kampf um ihre Zukunft zu unterstützen.
+      </p><p>
+      Damit für das Klima streikende SchülerInnen sich künftig nicht mehr vor allfälligen Verwaltungsstrafen fürchten müssen, richten wir einen Streikfonds ein.
+      </p><p>
+      Der Amazonas brennt. Die Arktis brennt. Die CO2-Emissionen steigen.
+      </p><p>
+      Um die Zukunft der jungen und aller kommenden Generationen zu sichern, benötigen wir sofort eine ambitionierte Klimapolitik.
+      </p><p>
+      Um das zu erreichen, braucht die Jugend dringend die Unterstützung der breiten Bevölkerung.
+      </p><p>
+      Bitte spenden auch Sie für den Streikfonds unter IBAN: AT23 3412 9000 0021 7653, Verwendungszweck STREIKFONDS bei der Gemeinwohlbank.
+      </p><p>
+      Es geht auch um Ihre Zukunft und die Ihrer Kinder und Enkel!
+      </p>
+    </section>
+    <div class="border">
+      <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+    </div>
+
+    <a name="region"></a>
+    <section id="region" class="block">
+      <div class="user-details">
+        <h1>Mach mit!</h1>
+      </div>
+      <p><strong>Wir brauchen noch #ParentsForFuture und jetzt auch weitere #TeachersForFuture in allen Bundesländern !!!</strong></p>
+      <p><strong>Bei Interesse - bitte email an <a href="mailto:parents@fridaysforfuture.at">parents@fridaysforfuture.at</a><br><br></strong>Jetzt
+      geht es darum die #FridaysForFuture Bewegung weiter zu unterstützen, damit sie ein Erfolg wird und das Streiken aufhören kann. Wir sind ja nicht da um Streiks zu organisieren. Wir streiken <strong>aber so lange, bis sie nicht mehr notwendig sind.</strong></p>
+      <p><strong>Bitte hilf uns so lange keine Ruhe zu geben, bis die Politik und die maßgeblichen Entscheidungsträger zu handeln beginnen und wirksame Taten setzen!</strong></p>
+      <div class="boxes-two">
+        <div class="box-left">
+          <h2>Vorarlberg</h2>
+          <p>fb: #ParentsForFuture - Vorarlberg<br>E-Mail: parents.vbg@fridaysforfuture.at</p>
+        </div>
+        <div class="box-right">
+          <h2>Oberösterreich</h2>
+          <p>Email: <strong><a href="mailto:parents.ooe@fridaysforfuture.at" target="_blank" rel="noreferrer noopener">parents.ooe@fridaysforfuture.at</a></strong></p>
+        </div>
+      </div>
+      <div class="boxes-two">
+        <div class="box-left">
+          <h2>Wien</h2>
+          <p>Wir sind auf Twitter: <a href="https://twitter.com/PFF_Wien" target="_blank" rel="noreferrer noopener">@PFF_Wien</a></p>
+          <p>Facebook: <strong><a href="https://www.facebook.com/Parents-for-future-Austria-320545775266918/">https://www.facebook.com/Paren...</a></strong></p>
+        </div>
+        <div class="box-right">
+          <h2>Südburgenland</h2>
+          <p><strong><a href="/suedburgenland/">Zur Unterseite der Gruppe</a></strong></p>
+          <p>Email: <strong><script type="text/javascript" language="javascript">
+            <!--
+            // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+            // Random encryption key feature coded by Andrew Moulden
+            // This code is freeware provided these four comment lines remain intact
+            // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+            { coded = "UnwVMdH.pk9e@Rwxen7HR2wRgdgwV.nd"
+              key = "X2FvDcPygNiqGnWTh9Rp8ZYwHLt0eQ6o34E1CSu7k5xamMOlfbJUjrszKIdAVB"
+              shift=coded.length
+              link=""
+              for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {
+                  ltr = coded.charAt(i)
+                  link += (ltr)
+                }
+                else {
+                  ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                  link += (key.charAt(ltr))
+                }
+              }
+            document.write("<a href='mailto:"+link+"'>parents.bgld [AT] fridaysforfuture.at</a>")
+            }
+            //-->
+            </script><noscript>Sorry, you need Javascript on to email me.</noscript></strong></p>
+          <p>Facebook: <strong><a href="https://www.facebook.com/ParentsForFutureSuedburgenland/">https://www.facebook.com/Paren...</a></strong></p>
+        </div>
+      </div>
+      <p style="padding-top:2em;">Hast du Fragen zu #ParentsForFuture Gruppen in ganz Österreich, <strong>schick uns eine Email </strong>an <a href="mailto:parents@fridaysforfuture.at">parents@fridaysforfuture.at</a> und wir versuchen dir weiterzuhelfen und Kontakt herzustellen.</p>
+    </section>
+
+    <footer class="footer">
+      <div style="text-align:center; ">
+        <p>
+            Folgt Parents For Future Österreich auf Social Media und verpasst nie wieder einen Streik:
+        </p>
+        <div class="header-icons">
+            <a aria-label="Facebook" target="_blank" href="https://www.facebook.com/Parents-for-future-Austria-320545775266918/"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+            <a aria-label="Twitter" target="_blank" href="https://twitter.com/PFF_Wien"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+            <a aria-label="WhatsApp" target="_blank" href="mailto:parents@fridaysforfuture.at?subject=WhatsApp-Gruppe Parents For Future Österreich&body=Hallo,
+
+            ich würde mich gerne mit Euch über die WhatsApp-Gruppe austauschen und freue mich über Eure Antwort."><i class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <p>
+      <a href="./impressum.html">Impressum</a>
+      |
+      <a href="./kontakt.html">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>
