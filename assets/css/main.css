@@ -233,6 +233,7 @@ th {
     line-height:1;
     color:#fff;
     font-family: fff-header;
+    min-height: 30pt;
 }
 .ortsgruppe .next-event {
     margin: 1em 0 2em;
