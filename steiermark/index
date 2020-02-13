@@ -56,8 +56,8 @@
       <div class="border-top ortsgruppe">
         <div class="next-event">
           Nächste Veranstaltungen: 
-          14.02.2029 Jubiläumsstreik - Fridays For Future - No Future on a Dead Planet
-          11:30 UHr, Mariahilferplatz, 8010 Graz
+          <div>14.02.2029 Jubiläumsstreik - Fridays For Future - No Future on a Dead Planet
+          <div>11:30 UHr, Mariahilferplatz, 8010 Graz
           </div>
         <a class="down" aria-label="Springe direkt zur Veranstaltung" href="#participate" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i></a>
       </div>
@@ -119,9 +119,8 @@
       <div style="text-align:center; ">
         <p>Vernetze Dich mit Parents For Future Graz per Email oder auf Facebook und verpasse keine Veranstaltung oder Info mehr von uns:
         </p>
-        <p><div style="text-align:left; ">
+        <p><div style="text-align:center; ">
         STMK@parentsforfuture.at
-        <p><div style="text-align:right; ">
         <div class="header-icons">
             <a aria-label="Facebook" target="_blank" href="https://www.facebook.com/Parents-for-future-Graz-278049139781979/"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
         </div>
