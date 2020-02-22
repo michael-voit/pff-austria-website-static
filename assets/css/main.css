@@ -357,6 +357,16 @@ th {
     background-position: center;
 }
 
+.background_ooe {
+    position: static;
+    z-index: 10;
+    left: 0vw;
+    width: 100%;
+    height: calc(100vh - 96px);
+    background-image: url("../img/linz-earth-strike.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .subpage .header-logo {
     position: relative;
     margin-bottom: 60px;
