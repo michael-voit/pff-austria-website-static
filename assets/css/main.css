@@ -357,15 +357,8 @@ th {
     background-position: center;
 }
 
-.background_ooe {
-    position: static;
-    z-index: 10;
-    left: 0vw;
-    width: 100%;
-    height: calc(100vh - 96px);
+.background.ooe {
     background-image: url("../img/linz-earth-strike.jpg");
-    background-size: cover;
-    background-position: center;
 }
 .background.graz {
     background-image: url("../img/PFF_graz_web.png");
