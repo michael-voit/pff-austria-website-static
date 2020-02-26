@@ -357,6 +357,10 @@ th {
     background-position: center;
 }
 
+.background.graz {
+    background-image: url("../img/PFF_graz_web.png");
+}
+
 .subpage .header-logo {
     position: relative;
     margin-bottom: 60px;
