@@ -363,7 +363,9 @@ th {
 .background.graz {
     background-image: url("../img/PFF_graz_web.png");
 }
-
+.background.klosterneuburg {
+    background-image: url("../img/Klosterneuburg_Demo1.jpg");
+}
 .subpage .header-logo {
     position: relative;
     margin-bottom: 60px;
