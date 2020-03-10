@@ -369,6 +369,9 @@ th {
 .background.waldviertel {
     background-image: url("../img/PFF_WV_trauermarsch-46.jpg");
 }
+.background.tirol {
+    background-image: url("../img/Klimastreik_Tirol2.jpg");
+}
 .subpage .header-logo {
     position: relative;
     margin-bottom: 60px;
