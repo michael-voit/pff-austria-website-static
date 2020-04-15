@@ -1539,3 +1539,7 @@ html
 a {
   color: #1b733f;
 }
+.navigation_top {
+	font-size: small;
+	font-style: italic;
+}
