@@ -372,6 +372,9 @@ th {
 .background.tirol {
     background-image: url("../img/Klimastreik_Tirol2.jpg");
 }
+.background.baden {
+    background-image: url("../../baden/img/streikEins.jpeg");
+}
 .subpage .header-logo {
     position: relative;
     margin-bottom: 60px;
