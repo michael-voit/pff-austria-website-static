@@ -1,5 +1,5 @@
 # First Website for Parents For Future Österreich
-Version 1.7.0
+Version 1.7.1
 
 Erste Website für die Parents For Future Österreich. Statisch und schnell zusammengeschustert, damit wir zügig online gehen können damit.
 
